@@ -1,0 +1,184 @@
+{
+  "info": {
+    "_postman_id": "e978eb8b-05fb-49d1-8b43-31ecb2fcd693",
+    "name": "Example-ApacheKafka",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "30810675"
+  },
+  "item": [
+    {
+      "name": "POST New Article articleId=456",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"stockEventId\": null,\r\n    \"stockEventType\": \"NEW\",\r\n    \"article\": {\r\n        \"articleId\": 456,\r\n        \"articleName\": \"banana cake\",\r\n        \"articlePrice\": \"10.55\"\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/v1/stockevent",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "v1",
+            "stockevent"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST New Article articleId=999 - For LibraryEventsRetryConsumer.java :: onMessage",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"stockEventId\": 999,\r\n    \"stockEventType\": \"NEW\",\r\n    \"article\": {\r\n        \"articleId\": 456,\r\n        \"articleName\": \"dark chocolate\",\r\n        \"articlePrice\": \"12.23\"\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/v1/stockevent",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "v1",
+            "stockevent"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST New Article articleId=457",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"stockEventId\": null,\r\n    \"stockEventType\": \"NEW\",\r\n    \"article\": {\r\n        \"articleId\": 457,\r\n        \"articleName\": \"cheesecake\",\r\n        \"articlePrice\": \"14,67\"\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/v1/stockevent",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "v1",
+            "stockevent"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST New Article articleId=458",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"stockEventId\": null,\r\n    \"stockEventType\": \"NEW\",\r\n    \"article\": {\r\n        \"articleId\": 458,\r\n        \"articleName\": \"premium coffee\",\r\n        \"articlePrice\": \"7.33\"\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/v1/stockevent",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "v1",
+            "stockevent"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT Update existed Article",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"stockEventId\": 1,\r\n    \"stockEventType\": \"UPDATE\",\r\n    \"article\": {\r\n        \"articleId\": 456,\r\n        \"articleName\": \"banana cake UPDATED\",\r\n        \"articlePrice\": \"15,34\"\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/v1/stockevent",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "v1",
+            "stockevent"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT Update non exists Article - non exists stockEventId = 2",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"libraryEventId\": 2,\r\n    \"libraryEventType\": \"UPDATE\",\r\n    \"article\": {\r\n        \"articleId\": 457,\r\n        \"articleName\": \"cheesecake UPDATED\",\r\n        \"articlePrice\": \"17.12\"\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/v1/libraryevent",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "v1",
+            "libraryevent"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
