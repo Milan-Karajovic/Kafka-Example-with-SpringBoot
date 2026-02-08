@@ -158,7 +158,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"libraryEventId\": 2,\r\n    \"libraryEventType\": \"UPDATE\",\r\n    \"article\": {\r\n        \"articleId\": 457,\r\n        \"articleName\": \"cheesecake UPDATED\",\r\n        \"articlePrice\": \"17.12\"\r\n    }\r\n}",
+          "raw": "{\r\n    \"stockEventId\": 2,\r\n    \"stockEventType\": \"UPDATE\",\r\n    \"article\": {\r\n        \"articleId\": 457,\r\n        \"articleName\": \"cheesecake UPDATED\",\r\n        \"articlePrice\": \"17.12\"\r\n    }\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -166,7 +166,7 @@
           }
         },
         "url": {
-          "raw": "http://localhost:8080/v1/libraryevent",
+          "raw": "http://localhost:8080/v1/stockevent",
           "protocol": "http",
           "host": [
             "localhost"
@@ -174,7 +174,7 @@
           "port": "8080",
           "path": [
             "v1",
-            "libraryevent"
+            "stockevent"
           ]
         }
       },
