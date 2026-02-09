@@ -3,10 +3,12 @@ Read Documentation: <a href="Documents/Kafka-Example.pdf" target="_blank">Kafka-
 
 # How to run project:
 1. Run docker version of Kafka Brokers and Zookeeper with command:
+   ```
      docker compose f docker compose multi broker.yml up
-2. Run demo kafka producer
-3. Run demo kafka consumer
-4. Use Postman collection to send a message to the producer <a href="Postman/Example-ApacheKafka.postman_collection.json" target="_blank">Postman Collection</a>
+   ```
+3. Run demo kafka producer
+4. Run demo kafka consumer
+5. Use Postman collection to send a message to the producer <a href="Postman/Example-ApacheKafka.postman_collection.json" target="_blank">Postman Collection</a>
    
 
 ## Support
