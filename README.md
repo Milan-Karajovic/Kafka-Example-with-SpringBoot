@@ -4,7 +4,7 @@ Read Documentation: <a href="Documents/Kafka-Example.pdf" target="_blank">Kafka-
 # How to run project:
 1. Run docker version of Kafka Brokers and Zookeeper with command:
    ```
-     docker compose f docker compose multi broker.yml up
+docker-compose -f docker-compose-multi-broker.yml up
    ```
 3. Run demo kafka producer
 4. Run demo kafka consumer
