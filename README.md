@@ -1,5 +1,5 @@
 # Kafka-Example-with-SpringBoot
-Read Documentation: <a href="Documents/Kafka-Example.pdf" target="_blank">Kafka-Example Explanation</a>
+Read Documentation: <a href="Documents/Kafka-Example-Explanation.pdf" target="_blank">Kafka-Example Explanation</a>
 
 # How to run project:
 1. Run docker version of Kafka Brokers and Zookeeper with command:
