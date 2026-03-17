@@ -4,8 +4,8 @@ spring:
 server:
   port: 8081
 topics:
-  retry: 'library-events.RETRY'
-  dlt: 'library-events.DLT'
+  retry: 'stock-events.RETRY'
+  dlt: 'stock-events.DLT'
 
 ---
 spring:
@@ -14,12 +14,12 @@ spring:
       on-profile: local
   kafka:
     template:
-      default-topic: library-events
+      default-topic: stock-events
     consumer:
       bootstrap-servers: localhost:9092,localhost:9093,localhost:9094
       key-deserializer: org.apache.kafka.common.serialization.IntegerDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      group-id: library-events-listener-group
+      group-id: stock-events-listener-group
       auto-offset-reset: latest
     producer:
       bootstrap-servers:
